@@ -1,7 +1,31 @@
 aid: trubrain
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/trubrain.png
 name: truBrain
-description: truBrain is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  truBrain is a Santa Monica, California nootropics and functional-beverage
+  brand that makes "natural superfuels for performance" — drinkable nootropic
+  shots (2,000mg of natural nootropics per 1oz bottle for focus and
+  motivation), drinkable ketones (Ketone XL, 11g of pure ketones per shot for
+  athletic energy and recovery), plus gummies, functional-mushroom blends,
+  capsules, NAD+, hydration, and sleep supplements, packaged in recycled paper
+  bottles. Founded by a team of neuroscientists and backed by 500 Global, the
+  company sells direct-to-consumer through a Shopify storefront and has run a
+  Regulation A+ public equity offering. This profile was surfaced from the 500
+  Global portfolio and added to the API Evangelist network. truBrain is a
+  consumer packaged-goods company: it publishes no first-party developer API,
+  documentation, or SDKs. The only machine-readable surface at its domain is
+  Shopify's Customer Accounts OpenID Connect / OAuth 2.0 discovery metadata.
 url: https://raw.githubusercontent.com/api-evangelist/trubrain/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +35,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Nootropics
+- Supplements
+- Cognitive Performance
+- Ketones
+- Functional Beverages
+- Consumer Packaged Goods
+- Ecommerce
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +55,18 @@ maintainers:
 common:
 - type: Website
   url: https://trubrain.com
+- type: Support
+  url: https://trubrain.com/pages/faq
+- type: TermsOfService
+  url: https://trubrain.com/pages/terms
+- type: PrivacyPolicy
+  url: https://trubrain.com/pages/privacy
+- type: WellKnown
+  url: well-known/trubrain-well-known.yml
+- type: DomainSecurity
+  url: security/trubrain-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

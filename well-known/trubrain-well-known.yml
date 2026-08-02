@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of https://trubrain.com/.well-known/*
+host: https://trubrain.com
+note: >-
+  trubrain.com is a Shopify-hosted storefront. The two discovery documents that
+  return 200 are Shopify's Customer Accounts (New customer accounts) OpenID
+  Connect / OAuth 2.0 authorization-server metadata, scoped to this shop
+  (issuer https://shopify.com/authentication/12105358). They describe Shopify's
+  shopper-authentication surface, not a first-party truBrain developer API.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: trubrain-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: trubrain-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 301
+- path: /.well-known/api-catalog
+  status: 301
+- path: /.well-known/ai-plugin.json
+  status: 301
